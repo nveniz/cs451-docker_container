@@ -43,7 +43,7 @@ docker build . --build-arg username=$(id -un) --build-arg uid=$(id -u)
 
 ### Running
 
-To run the container you must change the [DIRECTORY TO MAP] the directory you want to share with the container and use the following command:
+To run the container you must change the [DIRECTORY TO MAP] to the directory you want to share with the container and use the following command:
 
 ```bash
 docker run -it -v [DIRECTORY TO MAP]:/home/$(id -un)/shared --hostname=epl451 epl451:latest
