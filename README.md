@@ -8,12 +8,12 @@
 
 ### Info
 
-This is container replacement for the VM provided in the class, compared to the VM this container:
+This is a container replacement for the VM provided in the class, comparing the two the container:
 - Has faster access time (every time you need to access) but possibly takes more time to create.
 - Requires less disk space (5 GB).
-- A shared directory is mounted from the host to the container's filesystem, since containers are stateless by nature.
+- Uses a shared directory that is mounted from the host to the container's filesystem, since containers are stateless by nature.
 
-The Dockerfile has comments describing what does each command does and why and can be easilly modified or changed if the download links of the class change (Intel PIN tool link for example)
+The Dockerfile has comments describing what each command does and can be easilly modified or changed in case of different dowload links (Intel PIN tool link for example) or LLVM version.
 
 The container contains the following programs/tools/packages:
 - libbfd
