@@ -1,21 +1,32 @@
 # UCY-CS451 Docker Container
 
-This is container replacement for the VM provided in the class, compared to the VM this container:
-- Has faster access time (every time you need to access) but possibly takes more time to create.
-- Requires less disk space (4.5GB).
-- A shared directory is mounted from the host to the container's filesystem, since containers are stateless by nature.
-
-The Dockerfile has comments describing what does each command does and why and can be easilly modified or changed if the download links of the class change (Intel PIN tool link for example)
-
-### Table of Contents
+## Table of Contents
+- [Info](#Info)
 - [Prerequisite](#Prerequisites)
 - [Installation](#Installation)
 - [Running](#Running)
 
+### Info
+
+This is container replacement for the VM provided in the class, compared to the VM this container:
+- Has faster access time (every time you need to access) but possibly takes more time to create.
+- Requires less disk space (5 GB).
+- A shared directory is mounted from the host to the container's filesystem, since containers are stateless by nature.
+
+The Dockerfile has comments describing what does each command does and why and can be easilly modified or changed if the download links of the class change (Intel PIN tool link for example)
+
+The container contains the following programs/tools/packages:
+- libbfd
+- libelf
+- capstone
+- Intel PIN tool
+- LLVM
+- Other utilities (vim, git, gcc, gdb, wget, make)
+
 ### Prerequisites 
 
 - Docker engine installed, [info here](https://docs.docker.com/engine/install/)
-- 4.5 GB available storage
+- 5 GB available storage
 - Internet connection (for downloading remote repositories and files)
 
 ### Installation
